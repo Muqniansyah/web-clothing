@@ -1,0 +1,406 @@
+/*google font*/
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Quicksand&display=swap");
+
+:root {
+  --primary: #b18a66;
+  --white: #fff;
+  --shadow: 0 2px 2px rgb(0 0 0 /0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  background: var(--white);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-transform: uppercase;
+  color: black;
+  opacity: 0.8;
+}
+
+nav .mainMenu li a:hover {
+  opacity: 1;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+nav .mainMenu .closeMenu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+nav .logo {
+  font-family: "Kalam", cursive;
+  margin: 6px;
+}
+
+nav .mainMenu .login {
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 8px 15px;
+}
+
+nav .mainMenu .login:hover {
+  background-color: #a7d281;
+}
+
+/* jumbotron */
+.jumbotron {
+  height: 100vh;
+  padding: 120px 10px;
+  background-image: url(./assets/img/jumbotron/hero1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.jumbotron h1 {
+  color: var(--white);
+  font-family: "Kalam", cursive;
+}
+
+.jumbotron p {
+  color: var(--white);
+  font-family: "Kalam", cursive;
+}
+
+/* wishlist */
+.cart {
+  color: black;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 400px;
+  height: 100vh;
+  background-color: #000;
+  display: grid;
+  grid-template-rows: 50px 1fr 50px;
+  gap: 20px;
+  transition: right 1s;
+}
+
+.cart h2 {
+  color: chartreuse;
+  padding: 20px;
+  margin: 0;
+}
+
+.cart .listCart .item {
+  display: grid;
+  grid-template-columns: 50px 1fr 70px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  background-color: blueviolet;
+}
+
+.cart .listCart img {
+  width: 100%;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cart .listCart .item .name {
+  font-weight: bold;
+}
+
+.cart .listCart .item .quantity {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.cart .listCart .item span {
+  display: block;
+  width: 50px;
+  text-align: center;
+}
+
+.cart .listCart {
+  padding: 20px;
+  overflow: auto;
+}
+
+.cart .listCart::-webkit-scrollbar {
+  width: 0;
+}
+
+.cart .buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.cart .buttons div {
+  background-color: rgb(185, 97, 97);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cart .buttons a {
+  color: #fff;
+}
+
+.cart .buttons .checkout {
+  background-color: brown;
+}
+
+/* search */
+.searchbar {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 3px;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+input {
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.hover:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+/* cart */
+.bi-bag {
+  color: goldenrod;
+}
+
+#count {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: goldenrod;
+  color: white;
+}
+
+/* shopping */
+.container {
+  display: flex;
+  width: 70%;
+  margin-bottom: 30px;
+}
+
+#root {
+  margin-top: 20px;
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.sidebar {
+  margin-top: 20px;
+  width: 40%;
+  border-radius: 5px;
+  background-color: #eee;
+  margin-left: 20px;
+  padding: 15px;
+  text-align: center;
+}
+
+.head {
+  background-color: goldenrod;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 10px 0;
+  border-top: 1px solid #333;
+}
+
+/* item */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.img-box {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bottom {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 110px;
+}
+
+h2 {
+  font-size: 20px;
+  color: red;
+}
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: #333;
+}
+
+/* cart item */
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+
+.row-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid goldenrod;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rowimg {
+  max-width: 43px;
+  max-height: 43px;
+  border-radius: 50%;
+}
+
+.bi:hover {
+  cursor: pointer;
+  color: red;
+}
+
+/* search bar */
+
+/* footer */
+footer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #a7d281;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer p span {
+  font-family: "Kalam", cursive;
+}
+
+/*responsive breakpoint*/
+
+@media all and (max-width: 800px) {
+  nav .mainMenu {
+    height: 300px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 1s ease;
+    display: none;
+    background-color: whitesmoke;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    opacity: 1;
+  }
+}
