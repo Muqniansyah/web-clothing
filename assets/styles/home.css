@@ -419,7 +419,7 @@ button:hover {
   max-width: 700px;
   margin-top: 2rem;
   padding-bottom: 1rem;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #333;
   cursor: pointer;
 }
 
