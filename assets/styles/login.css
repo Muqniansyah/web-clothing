@@ -6,13 +6,14 @@
 }
 
 body {
-  background: #7c91d7;
+  background: #eee;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 .container {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 45%);
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   width: 920px;
@@ -64,6 +65,7 @@ form {
   padding: 0 50px;
   height: 100%;
 }
+
 h1 {
   font-weight: bold;
   margin-bottom: 20px;

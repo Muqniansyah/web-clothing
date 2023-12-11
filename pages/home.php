@@ -32,6 +32,8 @@ if (empty($username)) {
     </style>
   </head>
   <body>
+    <?php  echo '<script>alert("Selamat datang di toko HUNT CLOTH")</script>';?>
+
     <!-- jumbotron Start-->
     <header>
       <div class="jumbotron">
@@ -231,7 +233,7 @@ if (empty($username)) {
         <label for="s3" id="slide3">
           <div class="card">
             <div class="image">
-              <img class="rangga" src="../assets/img/contacs/rangga.jpg" alt="rangga" />
+              <img src="../assets/img/contacs/rangga99x.jpg" alt="rangga" />
               <div class="dots">
                 <div></div>
                 <div></div>
@@ -336,7 +338,7 @@ if (empty($username)) {
             <a href="#"><i class="fab fa-twitter"></i></a>
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            <img class="logo" src="../assets/img/contacs/huntclot.png" alt="logo">
+            <img class="logo" src="../assets/img/contacs/huntcloths.png" alt="logo">
           </div>
         </div>
       </div>

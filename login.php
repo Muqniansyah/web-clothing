@@ -18,8 +18,8 @@
                     <img src="./assets/img/login/hunt-cloth2.png" alt="login-images">
                     <h1>Login</h1>
                 </div>
-                <input placeholder="Email" name="user-email" type="email" required>
-                <input type="password" placeholder="Password" name="user-password">
+                <input placeholder="Nama" name="user-email" type="nama">
+                <input type="password" placeholder="Password" name="user-password" required>
                 <button id="logButton">Login</button>
             </form>
         </div>

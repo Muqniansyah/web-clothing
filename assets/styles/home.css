@@ -526,10 +526,6 @@ svg {
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
 }
 
-.cards .image .rangga {
-  object-fit: fill;
-}
-
 .cards .image img:hover {
   transform: scale(1.05);
 }

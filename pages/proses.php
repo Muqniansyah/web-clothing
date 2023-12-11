@@ -15,15 +15,19 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $password = @$_POST['user-password'];
 
     // Contoh validasi login
-    if ($password === '12345678') {
+    if ($password === 'admin') {
         // Simpan username dalam sesi
         $_SESSION['username'] = $user;
 
         // Redirect ke halaman utama
         header('Location: ../pages/home.php');
         exit();
-    } else {
-        echo '<div>Login failed. Invalid email or password.</div>';
+    } elseif ($password !== 'admin') {
+        echo '<script>alert("Password salah!")</script>';
+        echo '<script>window.location="../login.php"</script>';
+    } 
+    else {
+        echo  '<script>window.location="home.php"</script>'; 
     }
 }
 ?>
